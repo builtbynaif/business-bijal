@@ -1,24 +1,33 @@
 .our-services {
     background-color: rgba($mainGreen, 0.35);
- background: url('../../assets/images/service-bg.png') center center no-repeat;
+    background: url('../../assets/images/service-bg.png') center center no-repeat;
     background-size: cover;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
+    display: block;
     padding: 5% 0;
+
+    @mixin at530 {
+        display: flex;
+        justify-content: flex-end;
+    }
 
     &__inner {
         flex-basis: 50%;
-        
-        &--sub-heading{
-            font-size: 1.5rem;
-            padding:3px 5px;
+
+        &--sub-heading {
+            font-size: 1.15rem;
+            padding: 3px 5px;
+            @mixin at530{
+                font-size: 1.5rem;
+            }
         }
-        
-         &--sub-heading:hover{
-            font-size: 1.5rem;
-             background-color: $mainGreen;
-            width: 70%;
+
+        &--sub-heading:hover {
+            font-size: 1.15rem;
+            background-color: $mainGreen;
+            @mixin at530{
+                font-size: 1.5rem;
+            }
+            
         }
     }
 }

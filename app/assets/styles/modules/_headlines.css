@@ -1,51 +1,75 @@
 .headline {
     text-align: center;
-    font-size: 2.75rem;
     font-weight: 300;
     color: #fff;
     line-height: 1;
     letter-spacing: 3px;
 
+    @mixin at530 {
+        font-size: 2.75rem;
+    }
+    
+    &--extra-padding{
+        padding: 5% 0;
+    }
+
 }
 
 .sub-heading {
     text-align: center;
-    font-size: 2.95rem;
     font-weight: 100;
-    color: $mainGreen;
+    color: $mainOrange;
     line-height: 1;
     letter-spacing: 2px;
+    font-size: 2rem;
+
+    @mixin at530 {
+        font-size: 2.95rem;
+    }
 
     &__less-t-margin {
-        margin-top: -10px;
+        @mixin at530{
+              margin-top: -10px;
+        }
+    }
+    &__more-t-margin{
+        padding-top: 30px;
+    }
+    &__more-b-margin{
+        margin-bottom: 20px;
     }
 }
 
 .white {
     color: #fff;
     text-align: center;
-/*    font-size: 1.5rem;*/
     font-weight: 300;
     line-height: 1.1;
 
     &--narrow {
-        width: 50%;
-        margin: 0 auto;
+        width: 90%;
+        margin: 0 auto 2% auto;
+
+        @mixin at530 {
+            width: 75%;
+        }
     }
 
     &__less-t-margin {
-        margin-top: -20px;
+        @mixin at530 {
+            margin-top: -20px;
+        }
     }
-    
-    &__align-left{
+
+    &__align-left {
         text-align: left;
     }
 }
 
 .black {
     color: #000;
-    
-    &--align-left{
+
+    &--align-left {
         text-align: left;
     }
 }

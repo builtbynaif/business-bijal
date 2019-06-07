@@ -1,9 +1,29 @@
 .btn {
-    background-color: $mainGreen;
+    background-color: $mainOrange;
     color: #fff;
     text-decoration: none;
-    padding: .75rem 1.2rem;
+        padding: .6rem 1rem;
     display: inline-block;
+    font-size: 0.9rem;
+
+    @mixin at530 {
+        padding: .75rem 1.2rem;
+        font-size: 1.15rem;
+    }
+
+    &--menu {
+        background-color: transparent;
+        border: solid 1px #fff;
+        border-top: solid 1px rgba(255, 255, 255, 0.5);
+    }
+
+    &-yellow {
+        background-color: $mainOrange;
+
+        @mixin at1010 {
+            background-color: $mainGreen;
+        }
+    }
 
     &--orange {
         background-color: $mainOrange;
@@ -29,10 +49,17 @@
         color: #fff;
     }
 
-    &--smallest {
-        padding: 0.1rem 0.75rem;
+    &--center {
+        border: solid 1px $mainGreen;
+        text-align: center;
     }
-    
+
+    &--smallest {
+        @mixin at530 {
+            padding: 0.1rem 0.75rem;
+        }
+    }
+
 }
 
 .centered-btn {

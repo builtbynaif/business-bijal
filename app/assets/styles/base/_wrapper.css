@@ -1,51 +1,26 @@
 .wrapper {
-    overflow: hidden;
-    width: 90%;
-    max-width: 1236px;
+    width: 80%;
     margin: 5% auto;
+}
 
-    &--medium {
-        max-width: 976px;
-    }
-    
-    &--narrow{
-        max-width: 470px;
-    }
+.wrapper--no-margin {
+    width: 80%;
+    margin: 0 auto;
+}
 
-    &--no-padding-until-medium {
-        padding-left: 0;
-        padding-right: 0;
+.wrapper--modal {
+    width: 90%;
+    margin: 0 auto;
+}
 
-        @mixin at778 {
-            padding-left: 18px;
-            padding-right: 18px;
-        }
-    }
-    
-        &--no-padding-until-large {
-        padding-left: 0;
-        padding-right: 0;
+@media (min-width:530px) {
+    .wrapper--modal {
+    width: 40%;
+    margin: 2% auto;
+}
+}
 
-        @mixin at1010 {
-            padding-left: 18px;
-            padding-right: 18px;
-        }
-    }
-
-    .wrapper {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    &--b-margin {
-        margin-bottom: 1rem;
-
-        @mixin at530 {
-            margin-bottom: 3.875rem;
-
-        }
-    }
-    &-no-margin{
-        margin: 0 auto;
-    }
+.wrapper--menu {
+    width: 90%;
+    margin: 0 auto;
 }

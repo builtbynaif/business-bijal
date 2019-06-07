@@ -3,7 +3,10 @@
 
     div {
         outline: none;
-        padding: 20px;
+        padding: 5px;
+        @mixin at530{
+            padding: 20px;
+        }
     }
 
     &__interior {
@@ -35,7 +38,7 @@
 }
 
 .slick-dots {
-    z-index: 100;
+    z-index: 1;
     position: absolute;
     left: 0;
     right: 0;

@@ -1,12 +1,21 @@
 .primary-nav {
     padding-top: 10px;
-    @mixin at778{
+
+    @mixin at778 {
         padding-top: 0;
+       
     }
 
     &--pull-right {
         @mixin at778 {
-            float: right;
+            /*            float: right;*/
+
+            /*            edited by naif on 6/6     */
+            /* by naif 6/6 */
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 
@@ -37,7 +46,7 @@
     }
 
     a {
-        color: #333;
+        color: #fff;
         text-decoration: none;
         font-weight: 300;
         display: block;
@@ -49,8 +58,8 @@
             padding: 12px 0;
             font-size: 1rem;
             background-color: transparent;
-            
-            &.is-current-link{
+
+            &.is-current-link {
                 color: #fabb69;
             }
         }

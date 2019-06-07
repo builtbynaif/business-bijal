@@ -5,8 +5,17 @@
     padding:  7px;
     width: 100%;
     font-size: 1rem;
+    border-radius: 5px;
 } 
+
+.contact-form input[type=text]:nth-child(4){
+    height: 120px;
+}
 
 .icon--mail{
     display: inline-block;
+}
+
+.message input[type=text]{
+    height: 150px;
 }

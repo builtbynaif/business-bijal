@@ -1,0 +1,95 @@
+.values__outer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.values {
+    flex-basis: 40%;
+    min-width: 300px;
+    margin: 2% auto;
+
+    &__inner {
+        display: block;
+
+        @mixin at530 {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+    }
+
+    &__inner--left {
+        text-align: center;
+
+        @mixin at530 {
+            align-self: center;
+        }
+
+        &__icon {
+            background-color: $mainBlue;
+            display: inline-block;
+            margin: 0 5px 5px 5px;
+            width: 122px;
+            height: 122px;
+            position: relative;
+            border-radius: 50%;
+            transition: all 0.4s ease-out;
+            transform: scale(0.6);
+
+            @mixin at530 {
+                transform: scale(1);
+            }
+        }
+
+        &__icon:hover {
+            background-color: #333;
+        }
+
+        .icon {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    }
+
+    &__inner--right {
+        margin: 0;
+
+        @mixin at530 {
+            margin: 0 auto 0 30px;
+        }
+    }
+
+    &__sub-heading {
+        text-align: center;
+        color: $mainGreen;
+        font-size: 1.25rem;
+        margin: 0 auto;
+
+        @mixin at530 {
+            text-align: left;
+            font-size: 1.65rem;
+        }
+    }
+
+    /*
+    .icon--large {
+        width: 77px;
+        height: 77px;
+        background-size: 1000%;
+        left: 48%;
+    }
+
+    .icon--small {
+        top: 62%;
+        left: 66%;
+    }
+*/
+
+}

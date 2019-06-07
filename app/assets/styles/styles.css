@@ -14,10 +14,9 @@
 @import "modules/_social-icons";
 @import "modules/_hero-slider"; 
 @import "modules/_responsive";
-@import "modules/_particles";
 @import "modules/_headlines";
 @import "modules/_full-width"; 
-@import "modules/_departments"; 
+@import "modules/_values"; 
 @import "modules/_contact-us"; 
 @import "modules/_our-services"; 
 @import "modules/_video"; 
@@ -26,4 +25,8 @@
 @import "modules/_product-layout"; 
 @import "modules/_contact-form";
 @import "modules/_departments-page";
-@import "modules/_all-products";
+@import "modules/_all-products";  
+@import "modules/_categories"; 
+@import "modules/_image-hover";   
+@import "modules/_get-a-quote";   
+@import "modules/_footer"; 

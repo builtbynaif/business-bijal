@@ -1,0 +1,38 @@
+.categories {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #fff;
+    padding: 7% 0 0 0;
+
+    &--inner {
+        flex-basis: 25%;
+        min-width: 270px;
+        padding: 3% 0;
+    }
+
+    &--outer {
+        background: url('../../assets/images/SolidSheetSet.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding-bottom: 7%;
+    }
+}
+
+.site-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10% 5%;
+    box-sizing: border-box;
+    
+    & h5{
+        margin-left: 10%;
+    }
+}

@@ -1,6 +1,6 @@
 .hero-slider {
   position: relative;
-  padding-top: 65px;
+/*  padding-top: 65px;*/
 
   div {
     outline: none;
@@ -20,6 +20,24 @@
     background-size: cover;
     background-repeat: no-repeat;
       -webkit-backface-visibility: hidden;
+
+      &-text{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+          
+          & p {
+              padding: 3% 0;
+          }
+          
+          & a{
+              text-shadow: none;
+          }
+      }
+      
   }
 
   &__overlay {
@@ -35,7 +53,7 @@
 }
 
 .slick-dots {
-  z-index: 100;
+  z-index: 1;
   position: absolute;
   left: 0;
   right: 0;

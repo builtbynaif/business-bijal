@@ -9,13 +9,22 @@
 
 
     &--inner {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
+        display: block;
+
+        @mixin at530 {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
 
 
         &--content {
             flex-basis: 50%;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+            @mixin at530{
+                font-weight: 300;
+            }
         }
     }
 
@@ -27,14 +36,20 @@
 }
 
 .news-letter input[type="text"] {
-    width: 85%;
+    width: 100%;
     padding: 8px;
-    margin-right: 10px;
     font-size: 1.2rem;
 
+    @mixin at530 {
+        margin-right: 10px;
+        width: 85%;
+    }
 }
 
 .news-letter {
-    width: 70%;
-    margin: 2% auto;
+
+    @mixin at530 {
+        width: 70%;
+        margin: 2% auto;
+    }
 }

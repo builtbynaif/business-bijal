@@ -1,9 +1,14 @@
-.product--layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.our-products {
+    display: block;
+
+    @mixin at530 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
     &--inner {
-       flex-basis: 45%;
+        flex-basis: 25%;
     }
 }

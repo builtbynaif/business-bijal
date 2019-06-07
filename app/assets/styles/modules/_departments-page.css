@@ -1,10 +1,14 @@
-.departments-page{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    
-    &--inner{
+.departments-page {
+    display: block;
+
+    @mixin at530 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &--inner {
         flex-basis: 27%;
-        
+
     }
 }
