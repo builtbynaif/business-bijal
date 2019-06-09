@@ -13,7 +13,7 @@ class HeroSlider {
             arrows: false,
             dots: true,
             infinite: true,
-            speed: 500,
+            speed: 1200,
             fade: true,
             cssEase: 'linear'
         });

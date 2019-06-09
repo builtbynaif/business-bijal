@@ -3,25 +3,28 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    
-    
+
+
 
     &__inner {
-        flex-basis: 27%;
+        flex-basis: 30%;
         min-width: 270px;
         padding: 5%;
     }
 
+    &__inner:nth-child(2) {
+        flex-basis: 60%;
+        padding: 0;
+    }
+
     &__outer {
-      background-color: $mainGreen;
+        background-color: $mainOrange;
     }
-    
-/*
-    & iframe{
+
+    & iframe {
         max-width: 100%;
-        height: auto;
+        max-height: 300px;
     }
-*/
 }

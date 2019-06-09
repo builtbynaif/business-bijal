@@ -1,0 +1,17 @@
+.header-flex{
+    display: flex;
+    justify-content: flex-start;
+    max-height: 666px;
+    padding: 80px 0;
+    &--4{
+        flex-basis: 27%;
+        min-width: 300px;
+        height: auto;
+        background-color: #fff;
+    }
+    &--8{
+         flex-basis: 73%;
+        max-height: 666px;
+        overflow: hidden;
+    }
+}

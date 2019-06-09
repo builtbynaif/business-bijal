@@ -16,4 +16,4 @@ var heroSlider = new HeroSlider();
 var responsive = new Responsive(); 
 new RevealOnScroll($(".reveal-item"), "85%");
 new SlideOnScroll($(".slideIn"), "75%"); 
-new SlideOnScrollLeft($(".slideInLeft"), "75%");
+new SlideOnScrollLeft($(".slideInLeft"), "75%");  

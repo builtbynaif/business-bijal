@@ -13,8 +13,8 @@
 
     &--menu {
         background-color: transparent;
-        border: solid 1px #fff;
-        border-top: solid 1px rgba(255, 255, 255, 0.5);
+        border: solid 1px $mainBlack;
+        color: #333;
     }
 
     &-yellow {

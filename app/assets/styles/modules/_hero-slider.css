@@ -24,13 +24,15 @@
       &-text{
           position: absolute;
           top: 50%;
-          left: 50%;
+          left: 30%;
+          background-color: #fff;
           transform: translate(-50%, -50%);
-          text-align: center;
-          text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+          text-align: left;
+          padding: 3%;
+         
           
           & p {
-              padding: 3% 0;
+             
           }
           
           & a{

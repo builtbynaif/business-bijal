@@ -21,5 +21,26 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
+        &-t {
+            background-color: #e4e4e4;
+            display: inline-block;
+            margin: 0 5px 5px 5px;
+            width: 100%;
+            height: 72px;
+            position: relative;
+
+            @mixin at530 {
+                width: 72px;
+                padding: 20px;
+                margin: 0 5px;
+            }
+        }
     }
+}
+
+.icon-x{
+    background-color: transparent;
+    width: 72px;
+    height: 112px;
 }

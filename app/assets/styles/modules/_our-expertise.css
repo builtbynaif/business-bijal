@@ -1,0 +1,23 @@
+.our-expertise{
+    background-color: $mainBlack;
+/*    height: 100%;*/
+    padding: 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    color: #fff;
+    background: url('../../assets/images/our-expertise.jpg') center center no-repeat;
+/*    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);*/
+    
+    & h2{
+        text-align: left;
+    }
+    
+    &--inner{
+        flex-basis: 50%;
+/*        background-color: rgba(0, 0, 0, 0.28);*/
+        padding: 0 3%;
+    }
+}
